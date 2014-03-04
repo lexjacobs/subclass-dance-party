@@ -23,9 +23,9 @@ $(document).ready(function(){
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
-      Math.random() * 1000
+      $("body").height() * Math.random() * 0.9,
+      $("body").width() * Math.random() * 0.9,
+      Math.random() * 1000 + 1000
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
@@ -38,6 +38,26 @@ $(document).ready(function(){
 
   });
 
+  $(document).on("mouseover", '.dancer', function(){
+    console.log("mousedOver");
+    var direction = Math.floor(Math.random()*4);
+    console.log('directio= ', direction);
+    var wtf = this;
+    console.dir(wtf);
+    if(direction = 0){
+      this.$node.slideToggle();
+    }
+    if(direction = 1){
+      this.$node.slideToggle();
+    }
+    if(direction = 2){
+      this.$node.slideToggle();
+    }
+    if(direction = 3){
+      this.$node.slideToggle();
+
+    }
+  });
 
 });
 

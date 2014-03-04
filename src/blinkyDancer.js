@@ -18,10 +18,16 @@ BlinkyDancer.prototype.step = function(){
     // toggle() is a jQuery method to show/hide the <span> tag.
     // See http://api.jquery.com/category/effects/ for this and
     // other effects you can use on a jQuery-wrapped html tag.
+
   this.$node.toggle();
+
 };
 
-
+ // $("#customfield_10102").after($('#customfield_10103'));
+ //    $('#customfield_10103').css({ 'margin-left': '40px','width':'200px' })
+ //    $('#customfield_10102').css({ 'width': '200px' });
+ //    $('[for="customfield_10103"]').closest('.field-group').remove();
+ //
 var TinyDancer = function(top, left, timeBetweenSteps){
   BlinkyDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('tinyDancer');
