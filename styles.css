@@ -25,3 +25,14 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.tinyDancer{
+  border:50px solid blue;
+  border-radius:10px;
+  position:absolute;
+
+}
+.moonWalker{
+  border:20px dashed purple;
+  border-radius:10px;
+  position:absolute;
+}
