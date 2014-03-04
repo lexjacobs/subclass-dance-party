@@ -17,6 +17,10 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
+.lineUpButton{
+  padding:5px 12px;
+  float:left;
+}
 .topbar{
   height:32px;
   background-color: #555;
@@ -26,16 +30,17 @@ body, a:link, a:visited, a:active{
 }
 .dancer{
   /*border:10px solid red;*/
-  width: 500px;
-  height:206px;
+  width: 200px;
+  height:246px;
   position:absolute;
   background:url('src/img/bruceLee.gif');
+  background-size: 100%;
 
 }
 .tinyDancer{
   /*border:50px solid blue;*/
-  width: 300px;
-  height:300px;
+  width: 128px;
+  height:128px;
   position:absolute;
   background:url('src/img/tinyDancer.gif');
 
@@ -43,10 +48,11 @@ body, a:link, a:visited, a:active{
 .moonWalker{
   /*border:20px dashed purple;*/
   /*border-radius:10px;*/
-  width: 66px;
-  height:69px;
+  width: 132px;
+  height:138px;
   position:absolute;
   background:url('src/img/moonWalker.gif');
+  background-size: 100%;
 
 }
 /*.image-replacement {

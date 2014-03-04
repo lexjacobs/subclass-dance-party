@@ -35,7 +35,7 @@ Dancer.prototype.lineUp = function(){
   // find the global 'dancers' array.
   var danceParty = window.dancers;
   for (var i=0; i<danceParty.length; i++){
-    danceParty[i].setPosition(this.top, 100);
+    danceParty[i].setPosition(danceParty[i].top, 100);
 
 
   }
