@@ -18,5 +18,15 @@ $(document).ready(function(){
   $(".lineUpButton").on("click", function(event){
     window.dancers[0].lineUp();
   });
+
+  var bgClick = 0;
+  $('.changeButton').on('click', function(event){
+    bgClick++;
+    var bgClass = ['src/img/danceFloor.png', 'src/img/tron.jpg', 'src/img/fez.jpg', 'src/img/kong.gif'];
+    $('body').css('background-image','url(' + bgClass[bgClick%4] + ')');
+  });
+
+
+
 });
 

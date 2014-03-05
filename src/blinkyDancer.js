@@ -27,7 +27,7 @@ TinyDancer.prototype.rotation = 0;
 TinyDancer.prototype.step = function(){
   Dancer.prototype.step.call(this);
   this.rotation += 1;
-  var directions = ['north', 'east', 'south', 'west'];
+  var directions = ['south', 'west', 'north', 'east'];
   this.setPosition(this.top, this.left+=10);
   this.$node.addClass(directions[this.rotation % 4]);
   this.$node.removeClass(directions[(this.rotation-1)%4]);
