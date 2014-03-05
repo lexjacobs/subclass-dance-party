@@ -58,14 +58,23 @@ body, a:link, a:visited, a:active{
 
 .north{
   -webkit-transform: rotate(90deg);
+  -webkit-transition: -webkit-transform .1s;
+
+
 }
 .east{
   -webkit-transform: rotate(180deg);
+  -webkit-transition: -webkit-transform .1s;
+
 }
 .south{
   -webkit-transform: rotate(270deg);
+  -webkit-transition: -webkit-transform .1s;
+
 }
 .west{
   -webkit-transform: rotate(0deg);
+  /*-webkit-transition: -webkit-transform .2s;*/
+
 }
 
