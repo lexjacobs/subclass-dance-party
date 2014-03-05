@@ -25,7 +25,7 @@ $(document).ready(function(){
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random() * 0.9,
       $("body").width() * Math.random() * 0.9,
-      Math.random() * 1000 + 1000
+      Math.random() * 1000
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
@@ -45,16 +45,16 @@ $(document).ready(function(){
     var wtf = this;
     console.dir(wtf);
     if(direction = 0){
-      this.$node.slideToggle();
+      //$(?)
     }
     if(direction = 1){
-      this.$node.slideToggle();
+      //$(?)
     }
     if(direction = 2){
-      this.$node.slideToggle();
+      //$(?)
     }
     if(direction = 3){
-      this.$node.slideToggle();
+      //$(?)
 
     }
   });

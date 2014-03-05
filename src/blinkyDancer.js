@@ -19,15 +19,12 @@ BlinkyDancer.prototype.step = function(){
     // See http://api.jquery.com/category/effects/ for this and
     // other effects you can use on a jQuery-wrapped html tag.
 
-  this.$node.toggle();
+  //this.$node.toggle();
+  this.setPosition(this.top, this.left+=5);
+
 
 };
 
- // $("#customfield_10102").after($('#customfield_10103'));
- //    $('#customfield_10103').css({ 'margin-left': '40px','width':'200px' })
- //    $('#customfield_10102').css({ 'width': '200px' });
- //    $('[for="customfield_10103"]').closest('.field-group').remove();
- //
 var TinyDancer = function(top, left, timeBetweenSteps){
   BlinkyDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('tinyDancer');
@@ -36,14 +33,25 @@ var TinyDancer = function(top, left, timeBetweenSteps){
 
 TinyDancer.prototype = Object.create(BlinkyDancer.prototype);
 TinyDancer.prototype.constructor = TinyDancer;
-
+TinyDancer.prototype.rotation = 0;
+TinyDancer.prototype.step = function(){
+  Dancer.prototype.step.call(this);
+  this.rotation += 1;
+  var directions = ['north', 'east', 'south', 'west'];
+  this.setPosition(this.top, this.left+=10);
+  this.$node.addClass(directions[this.rotation % 4]);
+  this.$node.removeClass(directions[(this.rotation-1)%4]);
+};
 
 var MoonWalker = function(top, left, timeBetweenSteps){
   BlinkyDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('moonWalker');
-
 };
 
 MoonWalker.prototype = Object.create(BlinkyDancer.prototype);
 MoonWalker.prototype.constructor = MoonWalker;
+MoonWalker.prototype.step = function(){
+  Dancer.prototype.step.call(this);
+  this.setPosition(this.top, this.left+=10);
+};
 

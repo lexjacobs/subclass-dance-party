@@ -43,7 +43,7 @@ body, a:link, a:visited, a:active{
   height:128px;
   position:absolute;
   background:url('src/img/tinyDancer.gif');
-
+  -webkit-transform: scaleX(-1);
 }
 .moonWalker{
   /*border:20px dashed purple;*/
@@ -55,12 +55,17 @@ body, a:link, a:visited, a:active{
   background-size: 100%;
 
 }
-/*.image-replacement {
-  display: block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: url(http://akamaicovers.oreilly.com/images/9780596517748/cat.gif) no-repeat;
-  width: 180px;
-  height: 236px;
-  padding-left: 180px;
-}*/
+
+.north{
+  -webkit-transform: rotate(90deg);
+}
+.east{
+  -webkit-transform: rotate(180deg);
+}
+.south{
+  -webkit-transform: rotate(270deg);
+}
+.west{
+  -webkit-transform: rotate(0deg);
+}
+
