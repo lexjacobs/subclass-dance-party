@@ -36,9 +36,11 @@ Dancer.prototype.lineUp = function(){
   var danceParty = window.dancers;
   for (var i=0; i<danceParty.length; i++){
     danceParty[i].left = 100;
-    danceParty[i].setPosition(danceParty[i].top, danceParty[i].left);
+
+    danceParty[i].top =(($("body").height())/danceParty.length)*i;
   }
 
   // loop through the array, assigning each one a place
   // on the left side of the dance floor evenly spaced apart.
 };
+;
