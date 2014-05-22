@@ -45,3 +45,26 @@ MoonWalker.prototype.step = function(){
   this.setPosition(this.top, this.left+=10);
 };
 
+var Hungry = function(top, left, timeBetweenSteps){
+  BlinkyDancer.call(this, top, left, timeBetweenSteps);
+  this.$node.addClass('hungry');
+};
+
+Hungry.prototype = Object.create(BlinkyDancer.prototype);
+Hungry.prototype.constructor = Hungry;
+Hungry.prototype.step = function(){
+  Dancer.prototype.step.call(this);
+  this.setPosition(this.top, this.left+=10);
+};
+
+var Okeanos = function(top, left, timeBetweenSteps){
+  BlinkyDancer.call(this, top, left, timeBetweenSteps);
+  this.$node.addClass('okeanos');
+};
+
+Okeanos.prototype = Object.create(BlinkyDancer.prototype);
+Okeanos.prototype.constructor = Okeanos;
+Okeanos.prototype.step = function(){
+  Dancer.prototype.step.call(this);
+  this.setPosition(this.top, this.left+=10);
+};

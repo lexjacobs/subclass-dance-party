@@ -6,20 +6,8 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
-  background-image:url('src/img/danceFloor.png');
+  background-image:url('src/img/floor1.png');
   background-size: 100%;
-}
-
-bg1{
-  background-image:url('src/img/tron.jpg');
-}
-
-bg2{
-  background-image:url('src/img/fez.jpg');
-}
-
-bg3{
-  background-image:url('src/img/kong.gif');
 }
 
 body, a:link, a:visited, a:active{
@@ -44,29 +32,51 @@ body, a:link, a:visited, a:active{
 }
 .dancer{
   /*border:10px solid red;*/
-  width: 100px;
-  height:123px;
+  width: 150px;
+  height: 150px;
   position:absolute;
-  background:url('src/img/bruceLee.gif');
+  background:url('src/img/tranDance.gif');
   background-size: 100%;
 
 }
 .tinyDancer{
   /*border:50px solid blue;*/
-  width: 64px;
-  height:64px;
+  width: 150px;
+  height: 200px;
   position:absolute;
-  background:url('src/img/tinyDancer.gif');
+  background:url('src/img/tranJbro.png');
   background-size: 100%;
   /*-webkit-transform: scaleX(-1);*/
 }
 .moonWalker{
   /*border:20px dashed purple;*/
   /*border-radius:10px;*/
-  width: 66px;
-  height:66px;
+  width: 120px;
+  height: 180px;
   position:absolute;
-  background:url('src/img/moonWalker.gif');
+  background:url('src/img/tranUnitard.png');
+  background-size: 100%;
+
+}
+
+.hungry{
+  /*border:20px dashed purple;*/
+  /*border-radius:10px;*/
+  width: 60px;
+  height: 160px;
+  position:absolute;
+  background:url('src/img/tranJR.gif');
+  background-size: 100%;
+
+}
+
+.okeanos{
+  /*border:20px dashed purple;*/
+  /*border-radius:10px;*/
+  width: 120px;
+  height: 150px;
+  position:absolute;
+  background:url('src/img/tranOkeanos.png');
   background-size: 100%;
 
 }

@@ -22,7 +22,7 @@ $(document).ready(function(){
   var bgClick = 0;
   $('.changeButton').on('click', function(event){
     bgClick++;
-    var bgClass = ['src/img/danceFloor.png', 'src/img/tron.jpg', 'src/img/fez.jpg', 'src/img/kong.gif'];
+    var bgClass = ['src/img/floor1.png', 'src/img/floor2.png', 'src/img/floor3.png', 'src/img/floor4.png', 'src/img/floor5.png',];
     $('body').css('background-image','url(' + bgClass[bgClick%4] + ')');
   });
 
