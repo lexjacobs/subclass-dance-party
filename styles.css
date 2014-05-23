@@ -6,7 +6,7 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
-  background-image:url('src/img/floor1.png');
+  background-image:url('src/img/floor8.png');
   background-size: 100%;
 }
 
@@ -66,6 +66,17 @@ body, a:link, a:visited, a:active{
   height: 160px;
   position:absolute;
   background:url('src/img/tranJR.gif');
+  background-size: 100%;
+
+}
+
+.carlos{
+  /*border:20px dashed purple;*/
+  /*border-radius:10px;*/
+  width: 92px;
+  height: 96px;
+  position:absolute;
+  background:url('src/img/tranCarlos.png');
   background-size: 100%;
 
 }

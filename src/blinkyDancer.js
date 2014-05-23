@@ -68,3 +68,16 @@ Okeanos.prototype.step = function(){
   Dancer.prototype.step.call(this);
   this.setPosition(this.top, this.left+=10);
 };
+
+
+var Carlos = function(top, left, timeBetweenSteps){
+  BlinkyDancer.call(this, top, left, timeBetweenSteps);
+  this.$node.addClass('carlos');
+};
+
+Carlos.prototype = Object.create(BlinkyDancer.prototype);
+Carlos.prototype.constructor = Carlos;
+Carlos.prototype.step = function(){
+  Dancer.prototype.step.call(this);
+  this.setPosition(this.top, this.left+=10);
+};

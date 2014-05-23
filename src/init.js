@@ -22,8 +22,8 @@ $(document).ready(function(){
   var bgClick = 0;
   $('.changeButton').on('click', function(event){
     bgClick++;
-    var bgClass = ['src/img/floor1.png', 'src/img/floor2.png', 'src/img/floor3.png', 'src/img/floor4.png', 'src/img/floor5.png',];
-    $('body').css('background-image','url(' + bgClass[bgClick%4] + ')');
+    var bgClass = ['src/img/floor8.png', 'src/img/floor7.png', 'src/img/floor6.png', 'src/img/floor1.png', 'src/img/floor2.png', 'src/img/floor3.png', 'src/img/floor4.png', 'src/img/floor5.png',];
+    $('body').css('background-image','url(' + bgClass[bgClick%8] + ')');
   });
 
 
