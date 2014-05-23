@@ -16,13 +16,21 @@ body, a:link, a:visited, a:active{
 .title, .addDancerButton{
   font-family: arial, helvetica, sans-serif;
   padding:5px 12px;
-  float:right;
+  float:left;
+  font-size: 16px;
 }
-.lineUpButton, .changeButton{
+.lineUpButton {
   font-family: arial, helvetica, sans-serif;
   padding:5px 12px;
-  float:left;
+  float: right;
 }
+
+.changeButton{
+  font-family: arial, helvetica, sans-serif;
+  padding:5px 12px;
+  float: right;
+}
+
 .topbar{
   height:32px;
   background-color: #555;
@@ -81,6 +89,17 @@ body, a:link, a:visited, a:active{
 
 }
 
+.lex{
+  /*border:20px dashed purple;*/
+  /*border-radius:10px;*/
+  width: 160px;
+  height: 120px;
+  position:absolute;
+  background:url('src/img/tranLex.png');
+  background-size: 100%;
+
+}
+
 .okeanos{
   /*border:20px dashed purple;*/
   /*border-radius:10px;*/
@@ -94,18 +113,18 @@ body, a:link, a:visited, a:active{
 
 .north{
   -webkit-transform: rotate(90deg);
-  -webkit-transition: -webkit-transform .1s;
+  -webkit-transition: -webkit-transform .2s;
 
 
 }
 .east{
   -webkit-transform: rotate(180deg);
-  -webkit-transition: -webkit-transform .1s;
+  -webkit-transition: -webkit-transform .2s;
 
 }
 .south{
   -webkit-transform: rotate(270deg);
-  -webkit-transition: -webkit-transform .1s;
+  -webkit-transition: -webkit-transform .2s;
 
 }
 .west{
@@ -113,4 +132,44 @@ body, a:link, a:visited, a:active{
   /*-webkit-transition: -webkit-transform .2s;*/
 
 }
+
+.flipNorth{
+  -webkit-transform: skew(20deg, 30deg);
+  -webkit-transition: -webkit-transform .1s;
+
+
+}
+.flipEast{
+  -webkit-transform: skew(0deg, 0deg);
+  -webkit-transition: -webkit-transform .1s;
+
+}
+.flipSouth{
+  -webkit-transform: skew(10deg, 40deg);
+  -webkit-transition: -webkit-transform .1s;
+
+}
+.flipWest{
+  -webkit-transform: skew(30deg, 10deg);
+  -webkit-transition: -webkit-transform .1s;
+}
+
+.flipFlat{
+  -webkit-transform: skew(20deg, 30deg);
+  -webkit-transition: -webkit-transform .1s;
+}
+
+
+
+.mirror1{
+  -webkit-transform: scaleX(-1);
+  -webkit-transition: -webkit-transform .2s;
+
+}
+.mirror2{
+  -webkit-transform: scaleX(1);
+  -webkit-transition: -webkit-transform .2s;
+
+}
+
 

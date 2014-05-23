@@ -40,9 +40,14 @@ var MoonWalker = function(top, left, timeBetweenSteps){
 
 MoonWalker.prototype = Object.create(BlinkyDancer.prototype);
 MoonWalker.prototype.constructor = MoonWalker;
+MoonWalker.prototype.rotation = 0;
 MoonWalker.prototype.step = function(){
   Dancer.prototype.step.call(this);
+  this.rotation += 1;
+  var directions = ['mirror1', 'mirror2'];
   this.setPosition(this.top, this.left+=10);
+  this.$node.addClass(directions[this.rotation % 2]);
+  this.$node.removeClass(directions[(this.rotation-1)%2]);
 };
 
 var Hungry = function(top, left, timeBetweenSteps){
@@ -77,7 +82,29 @@ var Carlos = function(top, left, timeBetweenSteps){
 
 Carlos.prototype = Object.create(BlinkyDancer.prototype);
 Carlos.prototype.constructor = Carlos;
+Carlos.prototype.rotation = 0;
 Carlos.prototype.step = function(){
   Dancer.prototype.step.call(this);
+  this.rotation += 1;
+  var directions = ['flipSouth', 'flipWest', 'flipNorth', 'flipEast'];
   this.setPosition(this.top, this.left+=10);
+  this.$node.addClass(directions[this.rotation % 4]);
+  this.$node.removeClass(directions[(this.rotation-1)%4]);
+};
+
+var Lex = function(top, left, timeBetweenSteps){
+  BlinkyDancer.call(this, top, left, timeBetweenSteps);
+  this.$node.addClass('lex');
+};
+
+Lex.prototype = Object.create(BlinkyDancer.prototype);
+Lex.prototype.constructor = Lex;
+Lex.prototype.rotation = 0;
+Lex.prototype.step = function(){
+  Dancer.prototype.step.call(this);
+  this.rotation += 1;
+  var directions = ['flipWest', 'flipFlat', 'flipEast', 'flipFlat'];
+  this.setPosition(this.top, this.left+=10);
+  this.$node.addClass(directions[this.rotation % 4]);
+  this.$node.removeClass(directions[(this.rotation-1)%4]);
 };
