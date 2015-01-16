@@ -5,7 +5,6 @@ var Dancer = function(top, left, timeBetweenSteps){
   this.left = left;
   this._timeBetweenSteps = timeBetweenSteps;
 
-  // use jQuery to create an HTML <span> tag
   this.$node = $('<span class="dancer"></span>');
   this.setPosition(top, left);
   this.step();
@@ -14,8 +13,6 @@ var Dancer = function(top, left, timeBetweenSteps){
 
 Dancer.prototype.step = function(){
 
-  // the basic dancer doesn't do anything interesting at all on each step,
-  // it just schedules the next step
   var that = this;
   setTimeout(function(){
       that.step();
@@ -40,7 +37,5 @@ Dancer.prototype.lineUp = function(){
     danceParty[i].top =(($("body").height())/danceParty.length)*i;
   }
 
-  // loop through the array, assigning each one a place
-  // on the left side of the dance floor evenly spaced apart.
 };
-;
+
